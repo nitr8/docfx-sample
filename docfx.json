@@ -1,0 +1,21 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [ "index.md", "toc.yml", "articles/**/*.md" ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [ "articles/images/**"]
+      }
+    ],
+    "globalMetadata": {
+      "_appTitle": "docfx seed website",
+      "_enableSearch": true
+    },
+    "markdownEngineName": "markdig",
+    "dest": "wwwroot",
+    "postProcessors": [ "ExtractSearchIndex" ]
+  }
+}
